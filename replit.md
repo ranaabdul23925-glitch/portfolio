@@ -1,6 +1,6 @@
-# [Project name]
+# Digital Services Portfolio
 
-_Replace the heading above with the project's name, and this line with one sentence describing what this app does for users._
+A premium one-page portfolio and enquiry website for presenting digital marketing, Meta Ads, social media, web development, e-commerce and AI automation services.
 
 ## Run & Operate
 
@@ -22,15 +22,22 @@ _Replace the heading above with the project's name, and this line with one sente
 
 ## Where things live
 
-_Populate as you build — short repo map plus pointers to the source-of-truth file for DB schema, API contracts, theme files, etc._
+- `artifacts/digital-services-portfolio/src/App.tsx` — page structure, editable service copy, contact form interaction, FAQ, portfolio filters and CTAs.
+- `artifacts/digital-services-portfolio/src/index.css` — visual system, responsive layout and motion styles.
+- `artifacts/digital-services-portfolio/.replit-artifact/artifact.toml` — app artifact and web workflow metadata.
 
 ## Architecture decisions
 
-_Populate as you build — non-obvious choices a reader couldn't infer from the code (3-5 bullets)._
+- This is a frontend-only presentation site; no database or API is needed for the first release.
+- All personal proof points, projects, testimonials, pricing and contact details remain editable placeholders until the owner provides real information.
+- The contact form currently provides an in-page success state and is ready to connect to a preferred form endpoint later.
+- The WhatsApp CTA uses the requested placeholder number so replacing it is a single edit.
 
 ## Product
 
-_Describe the high-level user-facing capabilities of this app once they exist._
+- Responsive personal services website for Pakistan and international clients.
+- Presents Meta Ads, social media management, web development, digital marketing and AI automation services.
+- Includes process, benefits, quote categories, portfolio placeholders, testimonial placeholders, FAQ and contact enquiry flow.
 
 ## User preferences
 

@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Digital Services Portfolio"
+description = "A premium personal digital services portfolio for presenting social media management, Meta Ads, web development, digital marketing, and AI automation services to local and international clients."
+version = "1.0.0"
+id = "artifacts/digital-services-portfolio"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 21709
+
+[services.development]
+run = "pnpm --filter @workspace/digital-services-portfolio run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/digital-services-portfolio", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/digital-services-portfolio/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "21709"
+BASE_PATH = "/"
