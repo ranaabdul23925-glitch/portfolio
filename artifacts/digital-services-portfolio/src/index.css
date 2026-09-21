@@ -83,7 +83,7 @@ a { color: inherit; text-decoration: none; }
 .about-layout { display: grid; grid-template-columns: .75fr 1.25fr; gap: 100px; align-items: center; }
 .about-portrait { min-height: 430px; background: var(--night); color: var(--blue-bright); position: relative; overflow: hidden; display: grid; place-items: center; }
 .portrait-grid { position: absolute; inset: 0; opacity: .5; background-image: linear-gradient(rgba(118, 157, 220, .1) 1px, transparent 1px), linear-gradient(90deg, rgba(118, 157, 220, .1) 1px, transparent 1px); background-size: 38px 38px; mask-image: radial-gradient(circle at center, #000 10%, transparent 75%); }
-.portrait-initial { position: relative; font: 600 130px/.8 var(--app-font-display); letter-spacing: -.12em; opacity: .88; }
+.profile-image { position: absolute; inset: 20px; width: calc(100% - 40px); height: calc(100% - 40px); object-fit: cover; object-position: center top; filter: saturate(.9) contrast(1.03); }
 .portrait-caption { position: absolute; left: 24px; bottom: 24px; color: #8ca1c4; font-size: 10px; }
 .about-note { border-left: 2px solid var(--blue); padding-left: 17px; }
 .text-link { display: inline-flex; align-items: center; gap: 10px; padding: 0; margin-top: 29px; border: 0; color: #1e5ec7; background: transparent; cursor: pointer; font-size: 13px; font-weight: 800; transition: gap .2s ease, color .2s ease; }

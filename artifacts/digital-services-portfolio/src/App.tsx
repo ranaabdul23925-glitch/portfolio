@@ -21,6 +21,7 @@ import {
   Zap,
 } from 'lucide-react';
 import { Route, Switch, useLocation, Router as WouterRouter } from 'wouter';
+import profileImage from '@assets/ChatGPT_Image_Sep_21,_2026,_07_09_32_AM_1790000297343.png';
 
 const queryClient = new QueryClient();
 
@@ -31,7 +32,7 @@ function Home() {
   const [portfolioFilter, setPortfolioFilter] = useState('All');
 
   useEffect(() => {
-    document.title = 'Digital Services & Growth Partner | Pakistan — [Your Name]';
+    document.title = 'Digital Services & Growth Partner | Pakistan — Abdullah Rana';
     const description = 'Strategic digital marketing, web development, e-commerce and automation for ambitious businesses in Pakistan and worldwide.';
     let meta = document.querySelector('meta[name="description"]');
     if (!meta) {
@@ -83,7 +84,7 @@ function Home() {
         <div className="container header-inner">
           <button className="brand" onClick={() => scrollTo('top')} data-testid="button-brand-home" aria-label="Back to top">
             <span className="brand-mark">/</span>
-            <span>[Your Name]</span>
+            <span>Abdullah Rana</span>
           </button>
           <nav className={`nav-links ${menuOpen ? 'open' : ''}`} aria-label="Primary navigation">
             <a href="#about" onClick={() => setMenuOpen(false)} data-testid="link-nav-about">About</a>
@@ -135,10 +136,10 @@ function Home() {
 
         <section className="section about-section" id="about">
           <div className="container about-layout">
-            <div className="about-portrait reveal" aria-label="Editable professional profile placeholder">
+            <div className="about-portrait reveal">
               <div className="portrait-grid" />
-              <div className="portrait-initial">YN</div>
-              <span className="portrait-caption mono">Profile image placeholder</span>
+              <img className="profile-image" src={profileImage} alt="Abdullah Rana, digital marketing and web development specialist" />
+              <span className="portrait-caption mono">Abdullah Rana / Digital partner</span>
             </div>
             <div className="section-heading reveal delay-1">
               <div className="eyebrow">01 / About me</div>
@@ -408,10 +409,10 @@ function Home() {
                 <p>A rough brief is enough. Tell me what is happening, what you have tried and what you want to change. I will help you find the useful next step.</p>
               </div>
               <div className="contact-details reveal delay-1">
-                <a className="contact-detail" href="https://wa.me/92XXXXXXXXXX" target="_blank" rel="noreferrer"><MessageCircle size={17} /> WhatsApp: +92XXXXXXXXXX</a>
-                <div className="contact-detail"><Mail size={17} /> Email: [your-email@example.com]</div>
+                <a className="contact-detail" href="https://wa.me/923390145069" target="_blank" rel="noreferrer"><MessageCircle size={17} /> WhatsApp: 03390145069</a>
+                <a className="contact-detail" href="mailto:rana5729585@gmail.com"><Mail size={17} /> rana5729585@gmail.com</a>
                 <div className="contact-detail"><Check size={17} /> Based in Pakistan · Available for remote work</div>
-                <a className="whatsapp-cta" href="https://wa.me/92XXXXXXXXXX" target="_blank" rel="noreferrer"><MessageCircle size={16} /> Chat on WhatsApp</a>
+                <a className="whatsapp-cta" href="https://wa.me/923390145069" target="_blank" rel="noreferrer"><MessageCircle size={16} /> Chat on WhatsApp</a>
               </div>
             </div>
             <form className="contact-form reveal delay-2" onSubmit={handleSubmit} data-testid="form-contact">
@@ -419,7 +420,7 @@ function Home() {
                 <div className="field"><label htmlFor="name">Your name</label><input id="name" name="name" required placeholder="How should I address you?" data-testid="input-contact-name" /></div>
                 <div className="field"><label htmlFor="email">Work email</label><input id="email" name="email" type="email" required placeholder="you@company.com" data-testid="input-contact-email" /></div>
                 <div className="field"><label htmlFor="company">Business / company</label><input id="company" name="company" placeholder="Optional" data-testid="input-contact-company" /></div>
-                <div className="field"><label htmlFor="phone">Phone / WhatsApp</label><input id="phone" name="phone" type="tel" placeholder="+92..." data-testid="input-contact-phone" /></div>
+                <div className="field"><label htmlFor="phone">Phone / WhatsApp</label><input id="phone" name="phone" type="tel" placeholder="03390145069" data-testid="input-contact-phone" /></div>
                 <div className="field"><label htmlFor="service">What do you need?</label><select id="service" name="service" defaultValue="" data-testid="select-contact-service"><option value="" disabled>Select a service area</option><option>Social media management</option><option>Meta Ads management</option><option>Web development</option><option>E-commerce or landing page</option><option>Digital marketing</option><option>AI automation</option><option>Not sure yet</option></select></div>
                 <div className="field full"><label htmlFor="message">The useful context</label><textarea id="message" name="message" required placeholder="What are you building, changing or trying to solve?" data-testid="textarea-contact-message" /></div>
               </div>
@@ -433,12 +434,12 @@ function Home() {
       <footer className="site-footer">
         <div className="container">
           <div className="footer-top">
-            <button className="brand" onClick={() => scrollTo('top')} data-testid="button-footer-home"><span className="brand-mark">/</span><span>[Your Name]</span></button>
+            <button className="brand" onClick={() => scrollTo('top')} data-testid="button-footer-home"><span className="brand-mark">/</span><span>Abdullah Rana</span></button>
             <div className="socials" aria-label="Social links">
               {['LinkedIn', 'Instagram', 'Facebook', 'WhatsApp'].map((social) => <button className="social-placeholder" key={social} onClick={() => scrollTo('contact')} data-testid={`button-social-${social.toLowerCase()}`}>{social} · link soon</button>)}
             </div>
           </div>
-          <div className="footer-bottom"><span className="footer-small">Digital services for businesses ready to move with clarity.</span><span className="footer-small">© {new Date().getFullYear()} [Your Name]. All rights reserved.</span></div>
+          <div className="footer-bottom"><span className="footer-small">Digital services for businesses ready to move with clarity.</span><span className="footer-small">© {new Date().getFullYear()} Abdullah Rana. All rights reserved.</span></div>
         </div>
       </footer>
     </div>
