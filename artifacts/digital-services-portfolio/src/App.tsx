@@ -21,7 +21,7 @@ import {
   Zap,
 } from 'lucide-react';
 import { Route, Switch, useLocation, Router as WouterRouter } from 'wouter';
-import profileImage from '@assets/ChatGPT_Image_Sep_21,_2026,_07_09_32_AM_1790000297343.png';
+import profileImage from '@assets/ChatGPT Image Sep 22, 2026, 12_16_35 AM.png';
 
 const queryClient = new QueryClient();
 
@@ -83,7 +83,7 @@ function Home() {
       <header className="site-header">
         <div className="container header-inner">
           <button className="brand" onClick={() => scrollTo('top')} data-testid="button-brand-home" aria-label="Back to top">
-            <span className="brand-mark">/</span>
+            <img src="/logo.png" alt="Abdullah Rana" className="brand-logo" />
             <span>Abdullah Rana</span>
           </button>
           <nav className={`nav-links ${menuOpen ? 'open' : ''}`} aria-label="Primary navigation">
